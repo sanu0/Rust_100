@@ -1,0 +1,58 @@
+   0.030268800s  INFO prepare_target{force=false package_id=chap_1 v0.1.0 (C:\Users\HP\Documents\Coding\Rust\chap_1) target="chap_1"}: cargo::core::compiler::fingerprint: fingerprint error for chap_1 v0.1.0 (C:\Users\HP\Documents\Coding\Rust\chap_1)/Check { test: false }/TargetInner { name: "chap_1", doc: true, ..: with_path("C:\\Users\\HP\\Documents\\Coding\\Rust\\chap_1\\main.rs", Edition2024) }
+   0.030755100s  INFO prepare_target{force=false package_id=chap_1 v0.1.0 (C:\Users\HP\Documents\Coding\Rust\chap_1) target="chap_1"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\HP\Documents\Coding\Rust\chap_1\target\debug\.fingerprint\chap_1-41cc4a5ced73ce7e\bin-chap_1`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_libgit2_prerelease
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+   0.058315000s  INFO prepare_target{force=false package_id=chap_1 v0.1.0 (C:\Users\HP\Documents\Coding\Rust\chap_1) target="chap_1"}: cargo::core::compiler::fingerprint: fingerprint error for chap_1 v0.1.0 (C:\Users\HP\Documents\Coding\Rust\chap_1)/Check { test: true }/TargetInner { name: "chap_1", doc: true, ..: with_path("C:\\Users\\HP\\Documents\\Coding\\Rust\\chap_1\\main.rs", Edition2024) }
+   0.058403500s  INFO prepare_target{force=false package_id=chap_1 v0.1.0 (C:\Users\HP\Documents\Coding\Rust\chap_1) target="chap_1"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\HP\Documents\Coding\Rust\chap_1\target\debug\.fingerprint\chap_1-5438a6d0b898a8f1\test-bin-chap_1`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_libgit2_prerelease
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+    Checking chap_1 v0.1.0 (C:\Users\HP\Documents\Coding\Rust\chap_1)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.30s

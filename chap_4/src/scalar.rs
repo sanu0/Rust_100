@@ -1,12 +1,15 @@
+
+use std::any::type_name_of_val;
+
 pub fn Inte(){
     println!("Data Type : Integer");
     
     /**
-     * Each signed variant can store numbers from −(2n − 1) to 2n − 1 − 1 inclusive, 
+     * Each signed variant can store numbers from −2^(n − 1) to 2^(n − 1) − 1 inclusive, 
      * where n is the number of bits that variant uses. 
-     * So, an i8 can store numbers from −(27) to 27 − 1, which equals −128 to 127. 
-     * Unsigned variants can store numbers from 0 to 2n − 1, 
-     * so a u8 can store numbers from 0 to 28 − 1, which equals 0 to 255.
+     * So, an i8 can store numbers from −(2^7) to 2^7 − 1, which equals −128 to 127. 
+     * Unsigned variants can store numbers from 0 to 2^n − 1, 
+     * so a u8 can store numbers from 0 to 2^8 − 1, which equals 0 to 255.
      * 
      */
 
@@ -22,17 +25,17 @@ pub fn Inte(){
     let unsign_int_4 : u64 = 5;
     let unsign_int_5 : u128 = 5;
 
-    println!("Value: {}, Type: {}", sign_int_1, std::any::type_name_of_val(&sign_int_1));
-    println!("Value: {}, Type: {}", sign_int_2, std::any::type_name_of_val(&sign_int_2));
-    println!("Value: {}, Type: {}", sign_int_3, std::any::type_name_of_val(&sign_int_3));
-    println!("Value: {}, Type: {}", sign_int_4, std::any::type_name_of_val(&sign_int_4));
-    println!("Value: {}, Type: {}", sign_int_5, std::any::type_name_of_val(&sign_int_5));
+    println!("Value: {}, Type: {}", sign_int_1, type_name_of_val(&sign_int_1));
+    println!("Value: {}, Type: {}", sign_int_2, type_name_of_val(&sign_int_2));
+    println!("Value: {}, Type: {}", sign_int_3, type_name_of_val(&sign_int_3));
+    println!("Value: {}, Type: {}", sign_int_4, type_name_of_val(&sign_int_4));
+    println!("Value: {}, Type: {}", sign_int_5, type_name_of_val(&sign_int_5));
 
-    println!("Value: {}, Type: {}", unsign_int_1, std::any::type_name_of_val(&unsign_int_1));
-    println!("Value: {}, Type: {}", unsign_int_2, std::any::type_name_of_val(&unsign_int_2));
-    println!("Value: {}, Type: {}", unsign_int_3, std::any::type_name_of_val(&unsign_int_3));
-    println!("Value: {}, Type: {}", unsign_int_4, std::any::type_name_of_val(&unsign_int_4));
-    println!("Value: {}, Type: {}", unsign_int_5, std::any::type_name_of_val(&unsign_int_5));
+    println!("Value: {}, Type: {}", unsign_int_1, type_name_of_val(&unsign_int_1));
+    println!("Value: {}, Type: {}", unsign_int_2, type_name_of_val(&unsign_int_2));
+    println!("Value: {}, Type: {}", unsign_int_3, type_name_of_val(&unsign_int_3));
+    println!("Value: {}, Type: {}", unsign_int_4, type_name_of_val(&unsign_int_4));
+    println!("Value: {}, Type: {}", unsign_int_5, type_name_of_val(&unsign_int_5));
 }
 
 pub fn Floati(){
@@ -41,9 +44,9 @@ pub fn Floati(){
 
     let z = 67.89; //f64 by default;
 
-    println!("Value: {}, Type: {}", x, std::any::type_name_of_val(&x));
-    println!("Value: {}, Type: {}", y, std::any::type_name_of_val(&y));
-    println!("Value: {}, Type: {}", z, std::any::type_name_of_val(&z));
+    println!("Value: {}, Type: {}", x, type_name_of_val(&x));
+    println!("Value: {}, Type: {}", y, type_name_of_val(&y));
+    println!("Value: {}, Type: {}", z, type_name_of_val(&z));
 }
 
 pub fn Numeri() {
@@ -63,12 +66,12 @@ pub fn Numeri() {
     // remainder
     let remainder = 43 % 5;
     
-    println!("Value: {}, Type: {}", sum, std::any::type_name_of_val(&sum));
-    println!("Value: {}, Type: {}", difference, std::any::type_name_of_val(&difference));
-    println!("Value: {}, Type: {}", product, std::any::type_name_of_val(&product));
-    println!("Value: {}, Type: {}", quotient, std::any::type_name_of_val(&quotient));
-    println!("Value: {}, Type: {}", truncated, std::any::type_name_of_val(&truncated));
-    println!("Value: {}, Type: {}", remainder, std::any::type_name_of_val(&remainder));
+    println!("Value: {}, Type: {}", sum, type_name_of_val(&sum));
+    println!("Value: {}, Type: {}", difference, type_name_of_val(&difference));
+    println!("Value: {}, Type: {}", product, type_name_of_val(&product));
+    println!("Value: {}, Type: {}", quotient, type_name_of_val(&quotient));
+    println!("Value: {}, Type: {}", truncated, type_name_of_val(&truncated));
+    println!("Value: {}, Type: {}", remainder, type_name_of_val(&remainder));
 
 }
 
@@ -77,8 +80,8 @@ pub fn Boole() {
 
     let f: bool = false; // with explicit type annotation
 
-    println!("Value: {}, Type: {}", t, std::any::type_name_of_val(&t));
-    println!("Value: {}, Type: {}", f, std::any::type_name_of_val(&f));   
+    println!("Value: {}, Type: {}", t, type_name_of_val(&t));
+    println!("Value: {}, Type: {}", f, type_name_of_val(&f));   
 }
 
 pub fn Chare() {
@@ -86,7 +89,7 @@ pub fn Chare() {
     let z: char = 'ℤ'; // with explicit type annotation
     let heart_eyed_cat = '😻';
 
-    println!("Value: {}, Type: {}", heart_eyed_cat, std::any::type_name_of_val(&heart_eyed_cat));
+    println!("Value: {}, Type: {}", heart_eyed_cat, type_name_of_val(&heart_eyed_cat));
 }
 
 

@@ -1,61 +1,12 @@
-    Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
-   0.042285400s  INFO prepare_target{force=false package_id=chap_4 v0.1.0 (C:\Users\HP\Documents\Coding\Rust\chap_4) target="chap_4"}: cargo::core::compiler::fingerprint: fingerprint error for chap_4 v0.1.0 (C:\Users\HP\Documents\Coding\Rust\chap_4)/Check { test: false }/TargetInner { name: "chap_4", doc: true, ..: with_path("C:\\Users\\HP\\Documents\\Coding\\Rust\\chap_4\\src\\main.rs", Edition2024) }
-   0.042368100s  INFO prepare_target{force=false package_id=chap_4 v0.1.0 (C:\Users\HP\Documents\Coding\Rust\chap_4) target="chap_4"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\HP\Documents\Coding\Rust\chap_4\target\debug\.fingerprint\chap_4-cd6f54aa8e422d57\bin-chap_4`
-
-Caused by:
-    The system cannot find the file specified. (os error 2)
-
-Stack backtrace:
-   0: git_midx_writer_dump
-   1: git_midx_writer_dump
-   2: git_midx_writer_dump
-   3: git_midx_writer_dump
-   4: git_filter_source_repo
-   5: git_filter_source_repo
-   6: git_filter_source_repo
-   7: git_filter_source_repo
-   8: git_filter_source_repo
-   9: git_filter_source_repo
-  10: git_filter_source_repo
-  11: git_libgit2_prerelease
-  12: <unknown>
-  13: <unknown>
-  14: <unknown>
-  15: <unknown>
-  16: git_midx_writer_dump
-  17: git_filter_source_repo
-  18: git_midx_writer_dump
-  19: BaseThreadInitThunk
-  20: RtlUserThreadStart
-   0.060562400s  INFO prepare_target{force=false package_id=chap_4 v0.1.0 (C:\Users\HP\Documents\Coding\Rust\chap_4) target="chap_4"}: cargo::core::compiler::fingerprint: fingerprint error for chap_4 v0.1.0 (C:\Users\HP\Documents\Coding\Rust\chap_4)/Check { test: true }/TargetInner { name: "chap_4", doc: true, ..: with_path("C:\\Users\\HP\\Documents\\Coding\\Rust\\chap_4\\src\\main.rs", Edition2024) }
-   0.060621400s  INFO prepare_target{force=false package_id=chap_4 v0.1.0 (C:\Users\HP\Documents\Coding\Rust\chap_4) target="chap_4"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\HP\Documents\Coding\Rust\chap_4\target\debug\.fingerprint\chap_4-1ceb73a726c482b2\test-bin-chap_4`
-
-Caused by:
-    The system cannot find the file specified. (os error 2)
-
-Stack backtrace:
-   0: git_midx_writer_dump
-   1: git_midx_writer_dump
-   2: git_midx_writer_dump
-   3: git_midx_writer_dump
-   4: git_filter_source_repo
-   5: git_filter_source_repo
-   6: git_filter_source_repo
-   7: git_filter_source_repo
-   8: git_filter_source_repo
-   9: git_filter_source_repo
-  10: git_filter_source_repo
-  11: git_libgit2_prerelease
-  12: <unknown>
-  13: <unknown>
-  14: <unknown>
-  15: <unknown>
-  16: git_midx_writer_dump
-  17: git_filter_source_repo
-  18: git_midx_writer_dump
-  19: BaseThreadInitThunk
-  20: RtlUserThreadStart
+   0.016778600s  INFO prepare_target{force=false package_id=chap_4 v0.1.0 (C:\Users\HP\Documents\Coding\Rust\chap_4) target="chap_4"}: cargo::core::compiler::fingerprint: stale: changed "C:\\Users\\HP\\Documents\\Coding\\Rust\\chap_4\\src\\scalar.rs"
+   0.016811000s  INFO prepare_target{force=false package_id=chap_4 v0.1.0 (C:\Users\HP\Documents\Coding\Rust\chap_4) target="chap_4"}: cargo::core::compiler::fingerprint:           (vs) "C:\\Users\\HP\\Documents\\Coding\\Rust\\chap_4\\target\\debug\\.fingerprint\\chap_4-cd6f54aa8e422d57\\dep-bin-chap_4"
+   0.016825200s  INFO prepare_target{force=false package_id=chap_4 v0.1.0 (C:\Users\HP\Documents\Coding\Rust\chap_4) target="chap_4"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 13436823536, nanos: 471701300 } < FileTime { seconds: 13436823549, nanos: 709587300 }
+   0.016990000s  INFO prepare_target{force=false package_id=chap_4 v0.1.0 (C:\Users\HP\Documents\Coding\Rust\chap_4) target="chap_4"}: cargo::core::compiler::fingerprint: fingerprint dirty for chap_4 v0.1.0 (C:\Users\HP\Documents\Coding\Rust\chap_4)/Check { test: false }/TargetInner { name: "chap_4", doc: true, ..: with_path("C:\\Users\\HP\\Documents\\Coding\\Rust\\chap_4\\src\\main.rs", Edition2024) }
+   0.017022300s  INFO prepare_target{force=false package_id=chap_4 v0.1.0 (C:\Users\HP\Documents\Coding\Rust\chap_4) target="chap_4"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "C:\\Users\\HP\\Documents\\Coding\\Rust\\chap_4\\target\\debug\\.fingerprint\\chap_4-cd6f54aa8e422d57\\dep-bin-chap_4", reference_mtime: FileTime { seconds: 13436823536, nanos: 471701300 }, stale: "C:\\Users\\HP\\Documents\\Coding\\Rust\\chap_4\\src\\scalar.rs", stale_mtime: FileTime { seconds: 13436823549, nanos: 709587300 } }))
+   0.018112200s  INFO prepare_target{force=false package_id=chap_4 v0.1.0 (C:\Users\HP\Documents\Coding\Rust\chap_4) target="chap_4"}: cargo::core::compiler::fingerprint: stale: changed "C:\\Users\\HP\\Documents\\Coding\\Rust\\chap_4\\src\\scalar.rs"
+   0.018133500s  INFO prepare_target{force=false package_id=chap_4 v0.1.0 (C:\Users\HP\Documents\Coding\Rust\chap_4) target="chap_4"}: cargo::core::compiler::fingerprint:           (vs) "C:\\Users\\HP\\Documents\\Coding\\Rust\\chap_4\\target\\debug\\.fingerprint\\chap_4-1ceb73a726c482b2\\dep-test-bin-chap_4"
+   0.018138700s  INFO prepare_target{force=false package_id=chap_4 v0.1.0 (C:\Users\HP\Documents\Coding\Rust\chap_4) target="chap_4"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 13436823536, nanos: 471701300 } < FileTime { seconds: 13436823549, nanos: 709587300 }
+   0.018271100s  INFO prepare_target{force=false package_id=chap_4 v0.1.0 (C:\Users\HP\Documents\Coding\Rust\chap_4) target="chap_4"}: cargo::core::compiler::fingerprint: fingerprint dirty for chap_4 v0.1.0 (C:\Users\HP\Documents\Coding\Rust\chap_4)/Check { test: true }/TargetInner { name: "chap_4", doc: true, ..: with_path("C:\\Users\\HP\\Documents\\Coding\\Rust\\chap_4\\src\\main.rs", Edition2024) }
+   0.018290300s  INFO prepare_target{force=false package_id=chap_4 v0.1.0 (C:\Users\HP\Documents\Coding\Rust\chap_4) target="chap_4"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "C:\\Users\\HP\\Documents\\Coding\\Rust\\chap_4\\target\\debug\\.fingerprint\\chap_4-1ceb73a726c482b2\\dep-test-bin-chap_4", reference_mtime: FileTime { seconds: 13436823536, nanos: 471701300 }, stale: "C:\\Users\\HP\\Documents\\Coding\\Rust\\chap_4\\src\\scalar.rs", stale_mtime: FileTime { seconds: 13436823549, nanos: 709587300 } }))
     Checking chap_4 v0.1.0 (C:\Users\HP\Documents\Coding\Rust\chap_4)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.76s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.16s
